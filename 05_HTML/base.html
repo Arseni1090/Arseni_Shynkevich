@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        table {
+            width: 300px;
+            /* Ширина таблицы в процентах */
+        }
+
+        .col1 {
+            width: 100px;
+            /* Ширина ячейки */
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center">Заполните анкету</h1>
+    <form action="http://fe.it-academy.by/TestForm.php" method="post" target="_blank" enctype="multipart/form-data">
+        <p><b>Простая форма поиска с вариантами:</b></p>
+        <fieldset>
+            <legend>Строка поиска</legend>
+            <input type="text" maxlength="10"> <input type="submit" value="Искать"> <br>
+            <input type="radio"> на сайте
+            <input type="radio"> в google
+        </fieldset>
+        <fieldset>
+            <legend>Строка поиска</legend>
+            <input type="text" autofocus maxlength="10"> <input type="submit" value="Искать"> <br>
+            <input type="radio"> на сайте
+            <input type="radio"> в google
+        </fieldset>
+        <p><b>Простая форма авторизации:</b></p>
+        <fieldset>
+            <legend>Авторизируйтесь</legend>
+            <label for=“login”></label>
+            <input type="text" ID="login" NAME="login" AUTOFOCUS required> Логин <br>
+            <label for=“pass”></label> <br>
+            <input type="password" ID="pass" NAME="password" required> Пароль <br>
+            <label>
+                <input type="checkbox" name=“val_1" id="chbox1" checked> Оставаться в системе
+            </label> <br>
+            <input type="submit" value="Войти">
+        </fieldset>
+        <p><b>Опрос(голосование):</b></p>
+        <fieldset>
+            <legend>Как вам?</legend>
+            <label>
+                <input type="radio" name="radio_group" value="value_01" id="Checkbox_Group1_0" checked> ничего <br>
+            </label>
+            <label>
+                <input type="radio" name="radio_group" value="value_02" id="Checkbox_Group2_0"> неплохо <br>
+            </label>
+            <label>
+                <input type="radio" name="radio_group" value="value_03" id="Checkbox_Group3_0" checked> хорошо <br>
+            </label>
+            <label>
+                <input type="radio" name="radio_group" value="value_04" id="Checkbox_Group4_0"> здорово <br>
+            </label>
+            <input type="submit" value="Отправить">
+            <input type="hidden" name="date_voite" value="2013.12.31">
+        </fieldset>
+        <p><b>Отзыв:</b></p>
+        <fieldset>
+            <legend>Оставьте Ваш отзыв</legend>
+            <input type="text" ID="login" NAME="login"> Имя <br>
+            <input type="email" required method="post"> e-mail <br>
+            <textarea name="adress" id="adress" cols="15" rows="2" placeholder="Форма отправки"></textarea>
+        </fieldset>
+        <p><b>Выпадающий и мульти списки:</b></p>
+        <fieldset>
+            <legend>Города РБ</legend>
+            <select name="list" id="list">
+                <option value="1">Брест</option>
+                <option value="2">Гомель</option>
+                <option value="3">Гродно</option>
+                <option value="4">Витебск</option>
+                <option value="5">Могилев</option>
+                <option value="6">Минск</option>
+            </select>
+            <select name="list" size="8" multiple id="list">
+                <optgroup label="Города РБ">
+                    <option value="1">Брест</option>
+                    <option value="2">Минск</option>
+                    <option value="3">Витебск</option>
+                </optgroup>
+                <optgroup label="Города России">
+                    <option value="4">Москва</option>
+                    <option value="5">Рязань</option>
+                    <option value="6">Магадан</option>
+                </optgroup>
+            </select>
+            <input type="submit" value="Ok">
+        </fieldset>
+        <p><b>Загрузка файла на сервер:</b></p>
+        <fieldset>
+            <legend>Upload</legend>
+            Файл: <br>
+            <input type="file" name="file_Field" dir=“ltr”> <br>
+            Срок хранения (года): <br>
+            <input type="text" size="4">
+            <input type="submit" value="Загрузить">
+        </fieldset>
+        <p><b>Валидация данных HTML5:</b></p>
+        <fieldset>
+            <legend>Строка поиска</legend>
+            <input required type="text" pattern="[А-Яа-яЁё]"> <br>
+            Телефонный номер в формате +ХХХ-ХХ-ХХХХХХХ, где Х - любое число <br>
+            <input type="text" pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$"> <br>
+            <input type="submit" value="Проверить">
+        </fieldset>
+</body>
+
+</html>
