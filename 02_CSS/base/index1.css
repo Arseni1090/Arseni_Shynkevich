@@ -1,0 +1,24 @@
+a {
+    background-image: url(cards.7e0a18f0.png);
+    background-repeat: no-repeat;
+    height: 190px;
+    width: 140px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+ .a{
+    background-position-x: -432px; background-position-y: 0px;
+ } 
+ .b{
+    background-position-x: 0px; background-position-y: -1790px;
+ }
+ .c{
+    background-position-x: -288px; background-position-y: -1392px;
+ }
+ .d{
+    background-position-x: -144px; background-position-y: -2188px;
+ }
+ .e{
+    background-position-x: 0px; background-position-y: -2386px;
+ }
+ 

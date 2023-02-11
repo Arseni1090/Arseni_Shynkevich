@@ -1,0 +1,24 @@
+p{
+background-color: black;
+color: green;
+width: 400px;
+max-height: 80px;
+overflow: auto;
+}
+ul{
+    width: 350px;
+    list-style-type: upper-roman;
+    text-align: left;
+}
+span{
+    font-weight: bold;
+    list-style-type: upper-roman;
+}
+li{
+    width: 350px;
+    list-style-type: lower-roman;
+    text-align: left;
+}
+.b{
+    text-align: left;
+}

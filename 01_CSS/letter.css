@@ -1,0 +1,26 @@
+.c {
+    text-align: right;
+}
+
+.a {
+    text-align: right;
+}
+
+.d {
+    text-align: left;
+    font-family: 'Bad Script', cursive;
+    font-weight: bold;
+    text-decoration: underline
+}
+
+.e {
+    font-family: 'Bad Script', cursive;
+}
+
+.h {
+    font-style: italic;
+}
+
+.i {
+    font-style: italic;
+}
