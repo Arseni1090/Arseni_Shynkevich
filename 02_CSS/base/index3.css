@@ -10,13 +10,9 @@ ul{
     list-style-type: upper-roman;
     text-align: left;
 }
-span{
-    font-weight: bold;
-    list-style-type: upper-roman;
-}
-li{
+li ul{
     width: 350px;
-    list-style-type: lower-roman;
+    list-style: lower-roman;;
     text-align: left;
 }
 .b{
