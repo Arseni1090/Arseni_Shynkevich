@@ -5,6 +5,15 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 10000px;
+            overflow-x: hidden;
+        }
+
         .content-wrap {
             background-color: white;
             color: black;
@@ -28,6 +37,7 @@
             background-color: grey;
             margin-bottom: .2em;
             height: 151px;
+            margin-left: 150px;
         }
 
         .content {}
@@ -39,7 +49,7 @@
         }
 
         .footer {
-            max-height: none;
+            height: auto;
             background-color: silver;
             clear: both;
         }
@@ -95,12 +105,9 @@
             <img class="image" src="icon_mail.png" alt="">
         </div>
     </div>
-
-
     <div class="clear"></div>
     <div class="footer">Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещённым внутрь
         контентом.</div>
-
 </body>
 
 </html>
