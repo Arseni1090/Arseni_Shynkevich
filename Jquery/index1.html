@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        table tr,
+        table td {
+            border: rgb(159, 160, 158);
+        }
+
+        table tr:hover {
+            background-color: aquamarine;
+        }
+
+        table tr:first-child {
+            background-color: rgb(160, 160, 158);
+        }
+
+        tr td:first-child {
+            font-weight: bold;
+        }
+
+        table td {
+            border-bottom-style: dotted;
+            border-right-style: dotted;
+        }
+
+        tr td:last-child {
+            border-right-style: none;
+        }
+
+        caption {
+            caption-side: bottom;
+        }
+
+        tr:nth-child(2n+1) {
+            background-color: rgb(222, 222, 222);
+        }
+    </style>
+</head>
+
+<body>
+    <table id="table_data">
+        <caption>Данные о сотрудниках</caption>
+        <tr id="table_data">
+            <th>ФИО</th>
+            <th>Пол</th>
+            <th>Должность</th>
+            <th>Дата рож.</th>
+            <th>Данные 01</th>
+            <th>Данные 02</th>
+        </tr>
+        <tr id="table_data">
+            <td>Иванов Иван Иванович</td>
+            <td>М</td>
+            <td>Начальник</td>
+            <td>01.01.1960</td>
+            <td>4567</td>
+            <td>3453</td>
+        </tr>
+        <tr id="table_data">
+            <td>Петова Илонна Петровна</td>
+            <td>Ж</td>
+            <td>Секретарь</td>
+            <td>01.01.1989</td>
+            <td>66456</td>
+            <td>34534</td>
+        </tr>
+        <tr id="table_data">
+            <td>Сидоров Илья Игоревич</td>
+            <td>М</td>
+            <td>Бухгалтер</td>
+            <td>01.01.1979</td>
+            <td>54654</td>
+            <td>09087</td>
+        </tr>
+        <tr id="hideShowTable">
+            <td>Пупин Федор Федорович</td>
+            <td>М</td>
+            <td>Водитель</td>
+            <td>01.01.1973</td>
+            <td>64565467</td>
+            <td>43534534</td>
+        </tr>
+        <tr class="val">
+            <td>Крупин Сергей Иванович</td>
+            <td>М</td>
+            <td>Водитель 2</td>
+            <td>01.01.1983</td>
+            <td>4567544</td>
+            <td>3453355</td>
+        </tr>
+    </table>
+
+    <input type="button" id="hideshow" value="Скрыть">
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous">
+    </script>
+
+    <script>
+ $('#hideshow').click(function(){
+	$('#table_data').toggle();
+
+	if ($('#table_data').is(':visible')){
+		$(this).val('Скрыть');
+	}else{
+		$(this).val('Показать');
+	}
+});
+    </script>
+</body>
+
+</html>

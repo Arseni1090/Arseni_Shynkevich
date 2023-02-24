@@ -5,89 +5,48 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            height: 10000px;
-            overflow-x: hidden;
-        }
-
-        .content-wrap {
-            background-color: white;
-            color: black;
-        }
-
-        .banner {
-            height: 320px;
-            background-color: white;
-            float: right;
-        }
-
         .menu {
-            width: 240px;
-            height: 320px;
-            color: black;
-            background-color: silver;
+            background-color: #dbdbdb;
+        }
+
+        .left {
+            background-color: #cccccc;
+            width: 15em;
             float: left;
         }
 
-        .header {
-            background-color: grey;
+        .head {
+            background-color: #aaaaaa;
+            margin-left: 15em;
             margin-bottom: .2em;
-            height: 151px;
-            margin-left: 150px;
-        }
-
-        .content {}
-
-        .clear {
-            height: 2px;
-            background-color: white;
-            clear: both;
+            padding-top: .5em;
         }
 
         .footer {
-            height: auto;
-            background-color: silver;
+            background-color: #cccccc;
             clear: both;
-        }
-
-        .image {
-            position: absolute;
-            bottom: 630px;
-            right: 15px;
-            line-height: 15px;
         }
     </style>
 </head>
 
 <body>
-
-
-
-
     <div class="menu"> <br>
-        <b>Блок навигации</b>
-        <ul>
-            <li>Ширина 15em</li>
-            <li>Должен присутствовать цвет <br>
-                фона</li>
-            <li>Располагается слева</li>
-            <li>Блок навигации наполните <br>
-                контентом достаточным, <br>
-                чтобы по высоте он начинал <br>
-                захватывать вторую статью, <br>
-                как показано в данном примере</li>
-        </ul>
-    </div>
+        <div class="left">
+            <h3>Блок навигации</h3>
+            <ul>
+                <li>Ширина 15em</li>
+                <li>Должен присутствовать цвет <br>
+                    фона</li>
+                <li>Располагается слева</li>
+                <li>Блок навигации наполните <br>
+                    контентом достаточным, <br>
+                    чтобы по высоте он начинал <br>
+                    захватывать вторую статью, <br>
+                    как показано в данном примере</li>
+            </ul>
+        </div>
 
-
-
-    <div class="content-wrap">
-        <div class="banner"></div>
-        <div class="header">
+        <div class="head">
             <h3>Статья 1</h3>
             Размер блока: <br>
             Занимает всю доступную ширину <br>
@@ -95,17 +54,18 @@
             Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin- <br>
             bottom
         </div>
-        <div class="header">
+
+        <div class="head">
             <h3>Статья 2</h3>
             Занимает всю доступную ширину <br>
             Должен присутствовать цвет фона <br>
             Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin- <br>
             bottom. Картинка вставлена при помощи тега,, плавание организовано по правому краю внутри <br>
             данной статьи для этой картинки. <br>
-            <img class="image" src="icon_mail.png" alt="">
+            <img src="icon_mail.png" width="150px" style="border-radius: 100px; float: right;">
+            <div style="clear: both;"></div>
         </div>
     </div>
-    <div class="clear"></div>
     <div class="footer">Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещённым внутрь
         контентом.</div>
 </body>

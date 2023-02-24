@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px solid;
+            border-radius: 0px 10px;
+            width: 35%;
+            text-indent: 10px;
+        }
+
+       div a[href$='.url']::before{
+        content: url(../base/extref.png);
+       }
+       div a[href$='.word']::after{
+        content: url(../base/logo-doc.jpg);
+       }
+       div a[href$='.zip']::before{
+        content: url(../base/logo-zip.gif);
+       }
+       div a[href$='.pdf']::after{
+        content: url(../base/logo-pdf.png);
+       }
+       li a[href$='.word']:hover::after{
+        content: url(../base/logo-doc.jpg);
+       }
+       li a[href$='.pdf']:hover::after{
+        content: url(../base/logo-pdf.png);
+       }
+       li a[href$='.zip']:hover::after{
+        content: url(../base/logo-zip.gi);
+       }
+    </style>
+</head>
+
+<body>
+    <h1>Форматы файлов</h1>
+    <div class="a">
+        .doc или .DOC (от англ. <img src="../base/extref.png"><a href="#">document</a>) — расширение имени файла,
+        используемое для файлов, представляющих текст, с
+        разметкой или без.Расширение «.doc» часто использовалось для обозначения текстовых файлов, содержащих текст без
+        форматирования, позже стало использоваться для двоичных форматов с разметкой. <br>
+        <a href="https://ru.wikipedia.org/wiki/Microsoft_Word">документ MS Word</a><img src="logo-doc.jpg">
+    </div>
+    <br>
+    <div class="a">
+        Portable Document Format (<img src="extref.png"><a href="#">PDF</a>) — межплатформенный открытый формат
+        электронных документов, изначально
+        разработанный фирмой Adobe Systems в 1992 году с использованием ряда возможностей языка PostScript. <br>
+        <a href="https://ru.wikipedia.org/wiki/Portable_Document_Format">документ PDF</a><img
+            src="../base/logo-pdf.png">
+    </div>
+    <br>
+    <div class="a">
+        ZIP — формат архивации файлов и сжатия данных без потерь. Архив (<img src="../base/extref.png"><a
+            href="#">ZIP</a>) может содержать один или несколько файлов и
+        каталогов, которые могут быть сжаты разными алгоритмами. Наиболее часто в ZIP используется алгоритм сжатия
+        Deflate. Формат был создан в 1989 году Филом Кацем и реализован в программе PKZIP компании PKWARE[2] в качестве
+        замены формату архивов ARC Тома Хендерсона. Формат ZIP поддерживается множеством программ, в том числе
+        операционными системами Microsoft Windows (с 1998 года) и Apple macOS (с версии 10.3). Многие свободные
+        операционные системы также имеют встроенную поддержку ZIP-архивов. <br>
+        <a href="https: //ru.wikipedia.org/wiki/%D0%90%D1%80%D1%85%D0%B8%D0%B2">Архив</a><img
+            src="../base/logo-zip.gif">
+    </div>
+    <br>
+    <h2>Это список файлов</h2>
+    <ul>
+        <li class="a"> <a href="https://ru.wikipedia.org/wiki/Microsoft_Word">документ MS Word</a><img src="logo-doc.jpg" alt="">
+        </li>
+        <li class="a"> <a href="https://ru.wikipedia.org/wiki/Portable_Document_Format">документPDF</a><img src="logo-pdf.png"
+                alt=""></li>
+        <li class="a"> <a href="https: //ru.wikipedia.org/wiki/%D0%90%D1%80%D1%85%D0%B8%D0%B2">Архив</a><img
+                src="../base/logo-zip.gif" alt=""></li>
+    </ul>
+</body>
+
+</html>
